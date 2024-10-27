@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/estilo_for.css')}}">
+</head>
+
+<body>
+    <center>
+        <br>
+        <br>
+        <br>
+        <h1>TE AMO</h1>
+       
+        <form action="contact.php" method="post">
+            <div class="elem-group"> <label for="name">Nombre</label> <input type="text" id="name" name="visitor_name"
+                    placeholder="Nombres y Apellidos" pattern=[A-Z\sa-z]{3,20} required> </div>
+            <br>
+            <div class="elem-group"> <label for="email">Correo electrónico</label> <input type="email" id="email"
+                    name="visitor_email" placeholder="ejemplo@email.com" required> </div>
+            <br>
+            <div class="elem-group"> <label for="title">Telefono</label> <input type="text" id="title"
+                    name="email_title" required placeholder="Numero de Telefono" pattern=[A-Za-z0-9\s]{8,60}> </div>
+            <br>
+            <div class="elem-group"> <label for="title">Direccion</label> <input type="text" id="title"
+                name="email_title" required placeholder="Digite su Direccion" pattern=[A-Za-z0-9\s]{8,60}> </div>
+            <br>
+            <div class="elem-group"> <label for="title">Codigo Postal</label> <input type="text" id="title"
+                name="email_title" required placeholder="Digite su Codigo Postal" pattern=[A-Za-z0-9\s]{8,60}> </div>
+                <br>
+                    <button
+                type="submit">Enviar mensaje</button>
+        </form>
+    </center>
+
+</body>
+
+</html>

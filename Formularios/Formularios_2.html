@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/estilo_for.css')}}">
+</head>
+
+<body>
+    <center>
+        <br>
+        <br>
+        <br>
+        <h1>TE AMO_2</h1>
+
+        <form action="contact.php" method="post">
+            <div class="elem-group"> <label for="department-selection">Tipo de tarjeta</label> <select
+                id="department-selection" name="concerned_department" required>
+                <option value="">Credito</option>
+                <option value="">Debito</option>
+                <option value="">Ahorros</option>
+            </select> </div>
+            <br>
+            <div class="elem-group"> <label for="name">Nombre en la tarjeta</label> <input type="text" id="name" name="visitor_name"
+                    placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required> </div>
+            <br>
+            <div class="elem-group"> <label for="name">Numero de tarjeta</label> <input type="text" id="name" name="visitor_name"
+                placeholder="Numero" pattern=[A-Z\sa-z]{3,20} required> </div>
+            <br>
+            <div class="elem-group"> <label for="title">Cvc</label> <input type="text" id="title"
+                    name="email_title" required placeholder="Digite su clave de seguridad" min=1 max=3></div>
+            <br>
+            <label for="dob">Fecha de Caducidad de la tarjeta</label>
+            <input type="date" id="dob" name="dob" required />
+            <br>
+            <br>
+                    <button
+                type="submit">Enviar mensaje</button>
+            </form>
+
+</body>
+
+</html>
