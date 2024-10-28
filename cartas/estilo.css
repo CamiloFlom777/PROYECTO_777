@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(70, 70, 70);
+    color: aliceblue;
+}
+
+:root {
+    --primary-color: #131313;
+    --secondary-color: #bdb066;
+
+}
+
+.custom-card {
+    background-color: #000000;
+    /* Fondo de la carta */
+    border: 2px solid var(--primary-color);
+    /* Borde azul */
+    border-radius: 10px;
+    /* Borde redondeado */
+}
+
+/* Estilo de la imagen */
+.custom-card .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    /* Ajustar tamaño de la imagen */
+    object-fit: cover;
+    /* Ajustar la imagen sin distorsionarla */
+}
+
+/* Modificar el título */
+.custom-card .card-title {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+/* Modificar el texto */
+.custom-card .card-text {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Modificar el pie de página */
+.custom-card .card-footer {
+    background-color: var(--primary-color);
+    border-top: 1px solid var(--secondary-color);
+
+}
+
+/*  el texto del pie */
+.custom-card .card-footer small {
+    color: #fcfcfc;
+}
+
+.col button {
+    border-radius: 12px;
+    color: #000000;
+    height: 30px;
+    margin-top: 3px;
+    border-color: var(--secondary-color);
+}
+
+
+
+.boton-hover {
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.boton-hover:hover {
+    background-color: var(--primary-color);
+    color: lightyellow;
+    transform: scale(1.1);
+}
+
+.titulo {
+
+    width: 300px;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ffffff, #c5c5c5);
+-webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.linea {
+    width: 398px;
+
+    margin-left: 448px;
+}
+
+.card {
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.card-img-top {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+opacity: 0.9;
+    
+}
+
+
+.card .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .btn {
+background-color: #bfa800;
+transform: scale(1.05);
+    
+}
